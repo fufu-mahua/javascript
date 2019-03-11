@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="head">
+            <!-- logo图片 -->
+            <div class="logo">
+                <h2>
+					<img src="images/miaov_logo.png">
+				</h2>
+            </div>
+            <!-- logo图片 -->
+            <!-- 操作区 -->
+            <div class="operation">
+                <div class="new_folder active">
+                    <i class="iconfont icon-wangpanxinjianwenjianjia-copy"></i>
+                    <span>新建文件夹</span>
+                </div>
+                <div class="del">
+                    <i class="iconfont icon-del"></i>
+                    <span>删除</span>
+                </div>
+                <div class="move_to">
+                    <i class="iconfont icon-yidong"></i>
+                    <span>移到到</span>
+                </div>
+            </div>
+            <!-- 操作区 -->
+            <div class="del_success alert">
+                <i class="iconfont success_2e icon-success2e"></i>
+                <span>删除文件成功</span>
+            </div>
+            <div class="select_file alert">
+                <i class="iconfont alertwarn icon-alertwarn"></i>
+                <span>请选择文件</span>
+            </div>
+        </div>
+        <div class="content">
+            <!-- 左边菜单 -->
+            <div class="menu">
+                <ul class="list clear">
+                    <li>
+                        <div class="tree-title">
+                            <p class="iconfont icon-Group- folder_icon arrow"> <i class="iconfont icon-yousanjiao"></i> 微云</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 左边菜单 -->
+            <!-- 文件夹区域 -->
+            <div class="layout_main">
+                <!-- 面包屑导航 -->
+                <div class="nav">
+                    <div class="select_all">
+                        <label>
+                            <i class="iconfont icon-success "></i>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <div class="nav_list">
+                        <!-- <div class="tit">
+                            <span>微云</span>
+                            <i class="iconfont icon-youjiantou1"></i>
+                        </div>
+                        <div class="tit">
+                            <span>JS课程</span>
+                            <i class="iconfont icon-youjiantou1"></i>
+                        </div>
+                        <div class="tit active">
+                            <span>CSS课程</span>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- 面包屑导航 -->
+                <!-- 文件夹区域 -->
+                <div class="folder_area">
+                    <!-- 拖拽框 -->
+                    <div class="drag"></div>
+                    <!-- 拖拽框 -->
+                    <!-- 文件夹显示区域 -->
+                    <div class="folder">
+                        <div class="folder_list">
+                            <ul class="clear">
+                                <li>
+                                    <div class="select_icon">
+                                        <label>
+                                            <i class="iconfont"></i>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="folder_icon">
+                                        <img src="images/folder.png">
+                        			</div>
+                                        <div class="file_name">
+                                            <span class="name">JS基础课程</span>
+                                            <input type="text">
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="select_icon">
+                                        <label>
+                                            <i class="iconfont"></i>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="folder_icon">
+                                        <img src="images/folder.png">
+                        			</div>
+                                        <div class="file_name">
+                                            <span class="name">JS基础课程</span>
+                                            <input type="text">
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="select_icon">
+                                        <label>
+                                            <i class="iconfont"></i>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="folder_icon">
+                                        <img src="images/folder.png">
+                        			</div>
+                                        <div class="file_name">
+                                            <span class="name">JS基础课程</span>
+                                            <input type="text">
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="select_icon">
+                                        <label>
+                                            <i class="iconfont"></i>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="folder_icon">
+                                        <img src="images/folder.png">
+                        			</div>
+                                        <div class="file_name">
+                                            <span class="name">JS基础课程</span>
+                                            <input type="text">
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="select_icon">
+                                        <label>
+                                            <i class="iconfont"></i>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="folder_icon">
+                                        <img src="images/folder.png">
+                        			</div>
+                                        <div class="file_name">
+                                            <span class="name">JS基础课程</span>
+                                            <input type="text">
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="select_icon">
+                                        <label>
+                                            <i class="iconfont"></i>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="folder_icon">
+                                        <img src="images/folder.png">
+                        			</div>
+                                        <div class="file_name">
+                                            <span class="name">JS基础课程</span>
+                                            <input type="text">
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="select_icon">
+                                        <label>
+                                            <i class="iconfont"></i>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="folder_icon">
+                                        <img src="images/folder.png">
+                        			</div>
+                                        <div class="file_name">
+                                            <span class="name">JS基础课程</span>
+                                            <input type="text">
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="select_icon">
+                                        <label>
+                                            <i class="iconfont"></i>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="folder_icon">
+                                        <img src="images/folder.png">
+                        			</div>
+                                        <div class="file_name">
+                                            <span class="name">JS基础课程</span>
+                                            <input type="text">
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 文件夹显示区域 -->
+                    <!-- 滚动条 -->
+                    <!-- <div class="scrollEl">
+                        <div class="scroll_line"></div>
+                    </div> -->
+                    <!-- 滚动条 -->
+                    <!-- 删除元素提示框 -->
+                    <div class="del_alert">
+                        <div class="iconfont icon-guanbi close_icon"></div>
+                        <div class="alert_text">
+                            <i class="iconfont icon-wenhao"></i>
+                            <span>确定要删除这个文件夹吗？</span>
+                        </div>
+                        <div class="btn">
+                            <span class="sure">确定</span>
+                            <span class="cancel">取消</span>
+                        </div>
+                    </div>
+                    <!-- 删除元素提示框 -->
+                    <!-- 右键菜单 -->
+                    <div class="contentx_menu">
+                        <div class="item del">
+                            <i class="iconfont icon-del"></i>
+                            <span>删除</span>
+                        </div>
+                        <div class="item move_to_">
+                            <i class="iconfont icon-yidong"></i>
+                            <span>移动到</span>
+                        </div>
+                        <div class="item rename">
+                            <i class="iconfont icon-zhongmingming"></i>
+                            <span>重命名</span>
+                        </div>
+                    </div>
+                    <!-- 右键菜单 -->
+                    <div class="move_to">
+                        <div class="iconfont icon-guanbi close_icon"></div>
+                        <div class="tit">选择存储位置</div>
+                        <div class="menu_list">
+                            <ul class="list clear">
+                                <li>
+                                    <div class="iconfont icon-yousanjiao arrow"></div>
+                                    <p class="iconfont icon-Group- folder_icon">微云</p>
+                                    <ul class="list clear">
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                        </li>
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                        </li>
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="iconfont icon-yousanjiao arrow"></div>
+                                    <p class="iconfont icon-Group- folder_icon">微云</p>
+                                    <ul class="list clear">
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                            <ul class="list clear">
+                                                <li>
+                                                    <div class="iconfont icon-yousanjiao arrow"></div>
+                                                    <p class="iconfont icon-Group- folder_icon">微云</p>
+                                                </li>
+                                                <li>
+                                                    <div class="iconfont icon-yousanjiao arrow"></div>
+                                                    <p class="iconfont icon-Group- folder_icon">微云</p>
+                                                </li>
+                                                <li>
+                                                    <div class="iconfont icon-yousanjiao arrow"></div>
+                                                    <p class="iconfont icon-Group- folder_icon">微云</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                        </li>
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="iconfont icon-yousanjiao arrow"></div>
+                                    <p class="iconfont icon-Group- folder_icon">微云</p>
+                                    <ul class="list clear">
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                        </li>
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                        </li>
+                                        <li>
+                                            <div class="iconfont icon-yousanjiao arrow"></div>
+                                            <p class="iconfont icon-Group- folder_icon">微云</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn">
+                            <div class="sure">确定</div>
+                            <div class="cancel">取消</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 文件夹区域 -->
+            </div>
+            <!-- 文件夹区域 -->
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/miaov.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

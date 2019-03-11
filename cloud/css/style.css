@@ -1,0 +1,544 @@
+body{
+	margin: 0;
+	font-family: "Microsoft Yahei";
+	height: 100%;
+	font-size: 14px;
+	overflow: hidden;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+button,input{
+	outline: none;
+	padding: 0;
+}
+img{
+	vertical-align: top;
+}
+.clear:after{
+	content: ""; 
+    display: block;
+    clear: both; 
+    visibility: hidden; 
+}
+#wrap{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+	min-width: 1200px;
+	height: 100%;
+}
+/* 头部区域 */
+#wrap .head{
+	height: 70px;
+	z-index: 5;
+	border-bottom: 1px solid #d0d9de;
+	padding: 0 40px 0 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+/* 成功、警告 提示框 */
+#wrap .head .alert{
+	position: absolute;
+	height: 40px;
+	border-radius:  20px;
+	left: 45%;
+	top: 15px;
+	line-height: 40px;
+	color: #fff;
+}
+#wrap .head .alert i{
+	font-size: 30px;
+}
+#wrap .head .alert span{
+	vertical-align: top;
+}
+#wrap .head .del_success{
+	background: #86ce8b;
+	display: none;
+	padding: 0 25px 0 10px;
+}
+#wrap .head .select_file{
+	background: #f3a960;
+	display: none;
+	padding: 0 25px 0 20px;
+}
+#wrap .head .select_file i{
+	font-size: 25px;
+}
+/* 成功、警告 提示框 */
+#wrap .head .logo{
+	margin-top: 17px;
+	float: left;
+}
+#wrap .head .operation{
+	line-height: 70px;
+	margin-top: 15px;
+	float: right;
+}
+#wrap .head .operation div{
+	float: left;
+	padding: 0 20px;
+	color: #66757f;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+#wrap .head .operation .active {
+	
+}
+#wrap .head .operation .new_folder:hover{
+	color: #55addc;
+	border: 1px solid #55addc;
+}
+#wrap .head .operation .del:hover{
+	color: #55addc;
+	border: 1px solid #55addc;
+}
+#wrap .head .operation .move_to:hover{
+	color: #55addc;
+	border: 1px solid #55addc;
+}
+#wrap .head .operation div i{
+	margin-right: 12px;
+}
+
+/* 头部区域 */
+
+
+/* 主内容区域 */
+#wrap .content{
+	position: absolute;
+	top: 71px;
+	/*height: 100%;*/
+	bottom: 0;
+	width: 100%;
+}
+/* 左侧菜单区域 */
+#wrap .content .menu{
+	width: 258px;
+	/*height: 100%;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	border-right: 2px solid #e1e8ed;
+	padding-top: 20px;
+	font-size: 16px;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+#wrap .content .list .active>ul{
+	display: block;
+}
+#wrap .content .list li{
+	color: #66757f;
+	line-height: 35px;
+	clear: both;
+}
+#wrap .content .list li .tree-title{
+	padding-left: 20px;
+	height: 36px;
+}
+.nav_active {
+	background: #e1e8ed;
+}
+#wrap .content .list li .arrow{
+	float: right;
+	padding-left: 10px;
+	font-size: 20px;
+	transition: .5s;
+}
+#wrap .content .list li .rote {
+	transform: rotate(90deg);
+}
+#wrap .content .list li .folder_icon{
+	font-size: 20px;
+	cursor: pointer;
+	user-select: none;
+	float: left;
+}
+#wrap .content .list li p:before{
+	margin-right: 5px;
+}
+/* 左侧菜单区域 */
+#wrap .content .layout_main{
+	position: absolute;
+	top: 0;
+	left: 260px;
+	right: 0;
+	height: 100%;
+}
+#wrap .content .layout_main .nav{
+	height: 48px;
+	border-bottom: 2px  solid #e1e8ed;
+}
+#wrap .content .layout_main .nav .select_all{
+	width: 18px;
+	height: 18px;
+	border: 1px solid #fff;
+	margin: 15px;
+	text-align: center;
+	line-height: 18px;
+	border: 1px solid #d0d9de;
+	color:#fff;
+	border-radius: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 15px;
+}
+#wrap .content .layout_main .nav  .all_aitive{
+	background: #55addc;
+}
+#wrap .content .layout_main .nav .select_all label{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+}
+#wrap .content .layout_main .nav .select_all input{
+	display: none;
+}
+#wrap .content .layout_main .nav .select_all i{
+	font-size: 14px;
+}
+
+/* 全选状态 */
+#wrap .content .layout_main .select_active{
+	color:#fff;
+	background: #55addc;
+}
+
+#wrap .content .layout_main .nav .nav_list{
+	line-height: 50px;
+	float: left;
+	margin-left: 40px;
+	height: 50px;
+}
+#wrap .content .layout_main .nav .nav_list .tit{
+	padding: 0 4px;
+	line-height: 48px;
+	float: left;
+	position: relative;
+	text-align: center;
+	color: #2a3133;
+	font-weight: bold;
+	margin-right: 60px;
+	
+}
+#wrap .content .layout_main .nav .nav_list .tit span{
+	display: inline-block;
+	line-height: 48px;
+	cursor: pointer;
+}
+#wrap .content .layout_main .nav .nav_list .active{
+	color: #55addc;
+	border-bottom: 2px solid #55addc;
+}
+#wrap .content .layout_main .nav .nav_list .tit i{
+	position: absolute;
+	right: -40px;
+	top: 0;
+	font-size: 20px;
+	color: #e5eaeb;
+}
+#wrap .content .layout_main .folder_area{
+	height: 100%;
+	background: #f5f8fa;
+	position: relative;
+	/*overflow: auto;*/
+}
+#wrap .content .layout_main .folder_area .drag{
+	/*width: 100px;
+	height: 100px;*/
+	position: fixed;
+	background: rgba(207,227,241,.8);
+	top: 0;
+	left: 0;
+	border: 1px solid #afcde1;
+	z-index: 1;
+	/*display: none;*/
+}
+#wrap .content .layout_main .folder_bg {
+	background-image: url('../images/no_file_icon.png');
+	background-repeat: no-repeat;
+	background-position: center 155px;
+}
+#wrap .content .layout_main .folder_area .folder{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 10px;
+	overflow: auto;
+	width: 100%;
+}
+#wrap .content .layout_main .folder_area .scrollEl{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 10px;
+	background: #ccc;
+}
+#wrap .content .layout_main .folder_area .scroll_line{
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 6px;
+	width: 10px;
+	min-height: 50px;
+	background: #9f9f9f;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list{
+	padding: 40px 40px 0 40px;
+	color: #ebeff0;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul{
+	margin: auto;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul li{
+	width: 180px;
+	height: 180px;
+	background: #ebeff0;
+	border-radius: 5px;
+	float: left;
+	border: 1px solid #ebeff0;
+	margin-bottom: 50px;
+	margin-right: 50px;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul li:hover{
+	background: #fff;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul li:hover i{
+	color: #fff;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul li:hover .file_name .name{
+	color: #55addc;
+}
+/* 点击删除时的状态 */
+#wrap .content .layout_main .folder_area .folder .folder_list ul li .del_active{
+	background: #fff;
+	color: #55addc;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul li label{
+	width: 18px;
+	height: 18px;
+	margin: 10px;
+	text-align: center;
+	line-height: 18px;
+	border: 1.5px solid #ebeff0;
+	/*color:#fff;*/
+	border-radius: 2px;
+	cursor: pointer;
+	display: block;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul li label input{
+	display: none;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul li i{
+	width: 18px;
+	height: 18px;
+	color: #ebeff0;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul li .folder_icon{
+	width: 80px;
+	margin: auto;
+}
+#wrap .content .layout_main .folder_area .folder .folder_list ul .folder_active{
+	border: 1px solid #55addc;
+	box-shadow: 0 0 4px 1px #55addc;
+	background: #fff;
+
+}
+#wrap .content .layout_main .folder_area .folder  .folder_list ul  .folder_active .icon-active {
+	background: #55addc;
+}
+.content .layout_main .folder_area .folder .folder_list ul li .file_name {
+	margin-top: 18px;
+	text-align: center;
+	color: #66757f;
+	cursor: pointer;
+	user-select: none;
+}
+.content .layout_main .folder_area .folder .folder_list ul li .file_name .name{
+	display: -none;
+	display: inline-block;
+	width: 130px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.content .layout_main .folder_area .folder .folder_list ul li .file_name input{
+	width: 118px;
+	height: 30px;
+	border: 1px solid #55addc;
+	border-radius: 4px;
+	text-align: center;
+	display: none;
+}
+
+/* 确定删除提示框 */
+.content .layout_main .folder_area .del_alert {
+	width: 320px;
+	height: 180px;
+	border: 2px solid #55addc;
+	background: #fff;
+	position: absolute;
+	left: 30%;
+	top: 15%;
+	border-radius: 8px;
+	display: none;
+}
+.content .layout_main .folder_area .close_icon{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #5aafdd;
+	font-size: 20px;
+	cursor: pointer;
+	transition: .3s;
+	text-align: right;
+}
+.content .layout_main .folder_area .close_icon:hover {
+	transform: rotate(90deg);
+}
+.content .layout_main .folder_area .del_alert .alert_text{
+	height: 38px;
+	position: absolute;
+	top: 50px;
+	left: 40px;
+}
+.content .layout_main .folder_area .del_alert .alert_text span{
+	display: inline-block;
+	line-height: 43px;
+	vertical-align: top;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.content .layout_main .folder_area .del_alert .alert_text i{
+	display: inline-block;
+	font-size: 40px;
+	color: #a3acb2;
+}
+.content .layout_main .folder_area .del_alert .btn{
+	position: absolute;
+	top: 120px;
+	left: 70px;
+}
+.content .layout_main .folder_area .del_alert .btn span{
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	width: 78px;
+	height: 28px;
+	border-radius: 4px;
+	border: 1px solid #55addc;
+	cursor: pointer;
+}
+.content .layout_main .folder_area .del_alert .btn .sure{
+	background: #55addc;
+	color: #fff;
+	margin-right: 18px;
+}
+
+/* 确定删除提示框 */
+
+
+/* 右键菜单 */
+
+.content .layout_main .folder_area .contentx_menu{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 88px;
+	padding: 10px 0;
+	border: 1px solid #d1dadf;
+	background: #fff;
+	border-radius: 4px;
+	display: none;
+}
+.content .layout_main .folder_area .contentx_menu .item{
+	width: 78px;
+	margin: auto;
+	line-height: 25px;
+	border-bottom: 1px solid #d0d9de;
+}
+.content .layout_main .folder_area .contentx_menu .item i{
+	margin-right: 5px;
+}
+.content .layout_main .folder_area .contentx_menu .item:hover{
+	color: #55addc;
+	border-bottom-color: #55addc;
+	cursor: pointer;
+}
+
+/* 右键菜单 */
+
+/* 选择存储位置框 */	
+
+.content .layout_main .folder_area .move_to{
+	width: 408px;
+	height: 418px;
+	border: 2px solid #55addc;
+	position: absolute;
+	left: 30%;
+	top: 20px;
+	border-radius: 8px;
+	background: #fff;
+	display: none;
+}
+.content .layout_main .folder_area .move_to .tit{
+	font-weight: bold;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.content .layout_main .folder_area .move_to .menu_list{
+	width: 360px;
+	height: 272px;
+	border: 1px solid #e1e8ed;
+	position: absolute;
+	left: 20px;
+	top: 50px;
+	overflow: auto;
+}
+.content .layout_main .folder_area .move_to .btn{
+	position: absolute;
+	left: 104px;
+	top: 354px;
+}
+.content .layout_main .folder_area .move_to .btn div {
+	float: left;
+	background: #55addc;
+	width: 80px;
+	height: 30px;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.content .layout_main .folder_area .move_to .btn .cancel{
+	background: #fff;
+	border: 1px solid #55addc;
+	color: #55addc;
+	margin-left: 25px;
+}
+/* 选择存储位置框 */
+
